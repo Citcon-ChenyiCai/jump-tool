@@ -1,0 +1,12 @@
+#JumpName: jump-ore
+ Host jump-ore
+	 Hostname 10.1.4.26
+	 User chenyi.cai
+	 IdentityFile /Users/chenyi.cai/.ssh/id_rsa
+
+#JumpName: jump-ore
+ Host jump-ore
+	 Hostname 10.1.4.26
+	 User chenyi.cai
+	 IdentityFile /Users/chenyi.cai/.ssh/id_rsa
+
