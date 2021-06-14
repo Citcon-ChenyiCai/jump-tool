@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 SshConfig=~/.ssh/config
 
 case $1 in

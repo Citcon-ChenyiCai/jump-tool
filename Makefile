@@ -32,7 +32,6 @@ delete-server:
 
 .PHONY: deploy
 deploy:
-	
 	sudo rm -rf /usr/local/bin/jump
 	sudo cp scripts/jump.sh /usr/local/bin/jump
 	sudo chmod +x /usr/local/bin/jump
