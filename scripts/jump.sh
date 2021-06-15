@@ -83,7 +83,7 @@ case $1 in
         grep "^#JumpName" ~/.ssh/config | awk -F " " '{print $2}'
     ;;
     --get-server)
-        grep "${JumpName}$" -B 5 ~/.ssh/config | head -n 1 | awk -F " " '{print $2}'
+        grep "${JumpName}$" -B 5 ~/.ssh/config | grep "^#ServerName" | awk -F " " '{print $2}'
     ;;
     --delete-jump)
         sed -i "" "/#JumpName: ${JumpName}/,+5d" ~/.ssh/config 
