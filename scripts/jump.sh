@@ -80,10 +80,10 @@ case $1 in
         echo ${ServerTemplate} >> ${SshConfig}
     ;;
     --get-jump)
-        grep "^#JumpName" ~/.ssh/config | awk -F " " '{print $2}'
+        grep "^#JumpName" ~/.ssh/config | awk -F " " '{print $2}' | sort
     ;;
     --get-server)
-        grep "${JumpName}$" -B 5 ~/.ssh/config | grep "^#ServerName" | awk -F " " '{print $2}'
+        grep "${JumpName}$" -B 5 ~/.ssh/config | grep "^#ServerName" | awk -F " " '{print $2}' | sort
     ;;
     --delete-jump)
         sed -i "" "/#JumpName: ${JumpName}/,+5d" ~/.ssh/config 
