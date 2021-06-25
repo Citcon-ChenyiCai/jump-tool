@@ -1,4 +1,3 @@
-GOPATH:=$(shell go env GOPATH)
 IDENTITY_FILE=~/.ssh/id_rsa
 USERNAME=chenyi.cai
 
